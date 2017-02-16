@@ -1,0 +1,713 @@
+Name:		sha256:02307edc54866b691dd83fc258c7ca66bc8a919e9ec4e5b8bc94ff108b1867f5
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/postgresql-95-centos7@sha256:02307edc54866b691dd83fc258c7ca66bc8a919e9ec4e5b8bc94ff108b1867f5
+Parent Image:	cf37257346ad64fab4dd3c9d1ade026616f82cfa528d27d13978c686d85122fd
+Layer Size:	110.5 MB
+Image Created:	4 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-postgresql
+Working Dir:	<none>
+User:		26
+Exposes Ports:	5432/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		POSTGRESQL_VERSION=9.5
+		HOME=/var/lib/pgsql
+		PGUSER=postgres
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/postgresql
+		ENABLED_COLLECTIONS=rh-postgresql95
+		BASH_ENV=/usr/share/container-scripts/postgresql/scl_enable
+		ENV=/usr/share/container-scripts/postgresql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/postgresql/scl_enable
+Volumes:	/var/lib/pgsql/data
+
+
+Name:		sha256:02685168dd84c9119f8ab635078eec8697442fba93a7b342095e03b31aa8c5dd
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/mongodb-32-centos7@sha256:02685168dd84c9119f8ab635078eec8697442fba93a7b342095e03b31aa8c5dd
+Parent Image:	09e0361fb109c752617dc80c0ba4eb524aa416edd05a23f7818366a2c3c091de
+Layer Size:	210.9 MB
+Image Created:	12 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mongod
+Working Dir:	<none>
+User:		184
+Exposes Ports:	27017/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MONGODB_VERSION=3.2
+		HOME=/var/lib/mongodb
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mongodb
+		ENABLED_COLLECTIONS=rh-mongodb32
+		BASH_ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		PROMPT_COMMAND=. ${CONTAINER_SCRIPTS_PATH}/scl_enable
+Volumes:	/var/lib/mongodb/data
+
+
+Name:		sha256:1478800585f06a6c0feeb8301ceb54059d54816762de9f6b1182c3d52c75ac84
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/php-55-centos7@sha256:1478800585f06a6c0feeb8301ceb54059d54816762de9f6b1182c3d52c75ac84
+Parent Image:	d23040b93446af2b6928a7e9ec7e42f539826da824cf3e23de79dfe99aff4835
+Layer Size:	207.4 MB
+Image Created:	5 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/rh/php55/root/usr/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PHP_VERSION=5.5
+
+
+Name:		sha256:17f6367e24a3b4c856922bbd325f0e0dede345fc2f07d9bbcefae11099cf418a
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/mongodb-26-centos7@sha256:17f6367e24a3b4c856922bbd325f0e0dede345fc2f07d9bbcefae11099cf418a
+Parent Image:	fa61aa15294715c70366a1e69652bb2e7a82efb3fa419dc8363de861f54d5269
+Layer Size:	214.6 MB
+Image Created:	12 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mongod
+Working Dir:	<none>
+User:		184
+Exposes Ports:	27017/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MONGODB_VERSION=2.6
+		HOME=/var/lib/mongodb
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mongodb
+		ENABLED_COLLECTIONS=rh-mongodb26
+		BASH_ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		PROMPT_COMMAND=. ${CONTAINER_SCRIPTS_PATH}/scl_enable
+Volumes:	/var/lib/mongodb/data
+
+
+Name:		sha256:1a0e9ae0f6bf9b5f808534f3152dc068c48ad1bc428e94822dce84722a3decad
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/mongodb-24-centos7@sha256:1a0e9ae0f6bf9b5f808534f3152dc068c48ad1bc428e94822dce84722a3decad
+Parent Image:	1a5e32c208eeaeecd379cf1c7640650eae311842dfbf7f8493b6618fdc6498ab
+Layer Size:	157.2 MB
+Image Created:	5 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mongod
+Working Dir:	<none>
+User:		184
+Exposes Ports:	27017/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MONGODB_VERSION=2.4
+		HOME=/var/lib/mongodb
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mongodb
+		ENABLED_COLLECTIONS=mongodb24
+		BASH_ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		ENV=${CONTAINER_SCRIPTS_PATH}/scl_enable
+		PROMPT_COMMAND=. ${CONTAINER_SCRIPTS_PATH}/scl_enable
+Volumes:	/var/lib/mongodb/data
+
+
+Name:		sha256:1b46ad705d8e683ec4fc97c14ad16e8b591c9dcec8f35ea8bbcdffd347036c66
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/wildfly-81-centos7@sha256:1b46ad705d8e683ec4fc97c14ad16e8b591c9dcec8f35ea8bbcdffd347036c66
+Parent Image:	9cb73080decdb15db715023cf69bfe2614316edf34db656db31e1312e687da28
+Layer Size:	453.9 MB
+Image Created:	7 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		WILDFLY_VERSION=8.1
+		WILDFLY_VERSION_BIN=8.1.0.Final
+		MAVEN_VERSION=3.3.9
+
+
+Name:		sha256:1db221430bf24147327d4336fa2767a670324d617b9659476b7f5960316e6887
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/wildfly-90-centos7@sha256:1db221430bf24147327d4336fa2767a670324d617b9659476b7f5960316e6887
+Parent Image:	fbbffb7ceecb3afaa4518503b92166d8cbe9b994664fe4488a8a5cd915b4e193
+Layer Size:	493.3 MB
+Image Created:	7 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		WILDFLY_VERSION=9.0.2
+		WILDFLY_VERSION_BIN=9.0.2.Final
+		MAVEN_VERSION=3.3.9
+
+
+Name:		sha256:20461b0455b89b9d0b34274e0232e4704320c61fa2a34c758c83bed0aba94480
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/wildfly-100-centos7@sha256:20461b0455b89b9d0b34274e0232e4704320c61fa2a34c758c83bed0aba94480
+Parent Image:	bd3f98f4662babc45bac2be8c66c3cbf9e3e6742ed377f273218d10f96eaa026
+Layer Size:	496.4 MB
+Image Created:	7 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		WILDFLY_VERSION=10.0.0.Final
+		MAVEN_VERSION=3.3.9
+
+
+Name:		sha256:236ae3d7e2846b82b705f4f76fd4b10ccd3152ea11569319afbc2bac3de47187
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/ruby-22-centos7@sha256:236ae3d7e2846b82b705f4f76fd4b10ccd3152ea11569319afbc2bac3de47187
+Parent Image:	45eaaa76692818036022dae980235cfe09279775781686a936285c7d57e98965
+Layer Size:	158.7 MB
+Image Created:	13 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		RUBY_VERSION=2.2
+
+
+Name:		sha256:2a925d4cc24ccd3574dd43625b39d871df2def5ab6623e4d60d38ba2c7e8c084
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/perl-520-centos7@sha256:2a925d4cc24ccd3574dd43625b39d871df2def5ab6623e4d60d38ba2c7e8c084
+Parent Image:	8ded8b71ac9cd4d17cbe245bd64726d17dc6ba0f7edb3048e9593b9bb54f434e
+Layer Size:	185.7 MB
+Image Created:	13 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PERL_VERSION=5.20
+
+
+Name:		sha256:2ebdc97590031b1dfc1de61ddcb05978564d8ea9a95bdf083ac8c2435f04085b
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/jenkins-1-centos7@sha256:2ebdc97590031b1dfc1de61ddcb05978564d8ea9a95bdf083ac8c2435f04085b
+Parent Image:	bafb663dd7546a85918350dae82586f375da4ba3d4f65c05527a4866847c2f28
+Layer Size:	301.9 MB
+Image Created:	3 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Command:	/usr/libexec/s2i/run
+Working Dir:	<none>
+User:		1001
+Exposes Ports:	50000/tcp, 8080/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		JENKINS_VERSION=1.651
+		HOME=/var/lib/jenkins
+		JENKINS_HOME=/var/lib/jenkins
+Volumes:	/var/lib/jenkins
+
+
+Name:		sha256:3e3818bf7d68d82425fde60f21ca9571cec69ab0fe724c6577b5667ffc81b3c8
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/jenkins-2-centos7@sha256:3e3818bf7d68d82425fde60f21ca9571cec69ab0fe724c6577b5667ffc81b3c8
+Parent Image:	ce40747a0f9b8a8ac175299ab76a0d3afc0c2c8265864b639f61430b83c59c80
+Layer Size:	334.5 MB
+Image Created:	3 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Command:	/usr/libexec/s2i/run
+Working Dir:	<none>
+User:		1001
+Exposes Ports:	50000/tcp, 8080/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		JENKINS_VERSION=2.19
+		HOME=/var/lib/jenkins
+		JENKINS_HOME=/var/lib/jenkins
+		JENKINS_UC=https://updates.jenkins-ci.org
+Volumes:	/var/lib/jenkins
+
+
+Name:		sha256:54bdda98c79039140461f116a4a4f74d4b1165dbda6510439ee113ce4863677d
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/mariadb-101-centos7@sha256:54bdda98c79039140461f116a4a4f74d4b1165dbda6510439ee113ce4863677d
+Parent Image:	<none>
+Layer Size:	132.1 MB
+Image Created:	6 weeks ago
+Author:		<none>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mysqld
+Working Dir:	<none>
+User:		27
+Exposes Ports:	3306/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MYSQL_VERSION=10.1
+		HOME=/var/lib/mysql
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mysql
+		MYSQL_PREFIX=/opt/rh/rh-mariadb101/root/usr
+		ENABLED_COLLECTIONS=rh-mariadb101
+		BASH_ENV=/usr/share/container-scripts/mysql/scl_enable
+		ENV=/usr/share/container-scripts/mysql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/mysql/scl_enable
+Volumes:	/var/lib/mysql/data
+
+
+Name:		sha256:5aa614fbd6f9ba52bcdd1c86bbf5cb2f92084db9a041069696a8bda063bff03a
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/python-27-centos7@sha256:5aa614fbd6f9ba52bcdd1c86bbf5cb2f92084db9a041069696a8bda063bff03a
+Parent Image:	eb706e1981a298b0febe16c097ac6103c2edbf9030753da7d92265cb28051e39
+Layer Size:	196.6 MB
+Image Created:	7 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PYTHON_VERSION=2.7
+		PIP_NO_CACHE_DIR=off
+
+
+Name:		sha256:5c51eccb6ed7ef8bab99bd31760cfe4a1a67a50944a9b0410d12463dfa1ac021
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/wildfly-101-centos7@sha256:5c51eccb6ed7ef8bab99bd31760cfe4a1a67a50944a9b0410d12463dfa1ac021
+Parent Image:	5de739897ce5d08aa384007cc576fb62cfa595548dc89e36f2794d2ac785188f
+Layer Size:	500 MB
+Image Created:	7 days ago
+Author:		Ben Parees <bparees@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		WILDFLY_VERSION=10.1.0.Final
+		MAVEN_VERSION=3.3.9
+
+
+Name:		sha256:751a3cd1905914389fe568c25b3d5367cd705a0e4f81970a361f670ce891baf7
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/ruby-20-centos7@sha256:751a3cd1905914389fe568c25b3d5367cd705a0e4f81970a361f670ce891baf7
+Parent Image:	2ebac9510b96b4f4cb00c2db3c0240949ed876e404314d45b5d952514960a4e7
+Layer Size:	156.7 MB
+Image Created:	5 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		RUBY_VERSION=2.0
+
+
+Name:		sha256:7bbc639e8cb6404682957a671f16408b0d039998671c96bd2cb34a224a820e5a
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/python-33-centos7@sha256:7bbc639e8cb6404682957a671f16408b0d039998671c96bd2cb34a224a820e5a
+Parent Image:	39b503882d08c21f66c672277bdd5110b0baddb46716eaf9058fae9402a0c201
+Layer Size:	215.6 MB
+Image Created:	5 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/.local/bin/:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PYTHON_VERSION=3.3
+
+
+Name:		sha256:7cd33ccc63b8005810aedee0444472cc84c3e3c38fe9cd147edb964e712a1068
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/mysql-55-centos7@sha256:7cd33ccc63b8005810aedee0444472cc84c3e3c38fe9cd147edb964e712a1068
+Parent Image:	c066b12cac39ed0b5300dd58a472849fa2f032c78f23bd4d2a44b398cb2bac55
+Layer Size:	127.4 MB
+Image Created:	7 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mysqld
+Working Dir:	<none>
+User:		27
+Exposes Ports:	3306/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MYSQL_VERSION=5.5
+		HOME=/var/lib/mysql
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mysql
+		MYSQL_PREFIX=/opt/rh/mysql55/root/usr
+		ENABLED_COLLECTIONS=mysql55
+		BASH_ENV=/usr/share/container-scripts/mysql/scl_enable
+		ENV=/usr/share/container-scripts/mysql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/mysql/scl_enable
+Volumes:	/var/lib/mysql/data
+
+
+Name:		sha256:93e5b3f7c8d5cceaafd44cfca9654162e9202e2576e00a299b38509b6f0d48c4
+Created:	4 hours ago
+Labels:		<none>
+Annotations:	openshift.io/image.managed=true
+Docker Image:	172.30.159.90:5000/myproject/angular2@sha256:93e5b3f7c8d5cceaafd44cfca9654162e9202e2576e00a299b38509b6f0d48c4
+Parent Image:	b783b17af3e76466237cd431514f4e86bf94885b74c5faf280cfef045257d32e
+Layer Size:	325.4 MB
+Image Created:	4 days ago
+Author:		Marc Despland <marc.despland@orange.com>
+Arch:		amd64
+Command:	usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		NPM_CONFIG_LOGLEVEL=info
+		NODE_VERSION=6.7.0
+		BUILDER_VERSION=1.0
+
+
+Name:		sha256:a0ca21dfc8cd1f3b8abea664d7c80ab7fb8993c8e75e106fe5bc66d5af720ca6
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/python-35-centos7@sha256:a0ca21dfc8cd1f3b8abea664d7c80ab7fb8993c8e75e106fe5bc66d5af720ca6
+Parent Image:	68c17f189a6c7b8d3e0426008bccd4408c399a981119a0e7fd02dddab66b6a03
+Layer Size:	192.6 MB
+Image Created:	7 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PYTHON_VERSION=3.5
+		PIP_NO_CACHE_DIR=off
+
+
+Name:		sha256:b36c8421d902f98624c3141c6e3d56d72ae8d3fcb8ab0256c09a46ff5633d092
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/python-34-centos7@sha256:b36c8421d902f98624c3141c6e3d56d72ae8d3fcb8ab0256c09a46ff5633d092
+Parent Image:	3669b561635e5bf41d2c6c2eb7b4fe24b5c278bb781ae469d5d59d7ada374185
+Layer Size:	197.1 MB
+Image Created:	7 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PYTHON_VERSION=3.4
+		PIP_NO_CACHE_DIR=off
+
+
+Name:		sha256:ba457fe31eca5af800de087ea6daaa53ac5c13fa6bdb9a107b1fd832283c7b20
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/ruby-23-centos7@sha256:ba457fe31eca5af800de087ea6daaa53ac5c13fa6bdb9a107b1fd832283c7b20
+Parent Image:	44e9fa26d6f1aa1fa8b037e63b81fde642120e510db7d9775f7212f9e274d995
+Layer Size:	164.1 MB
+Image Created:	13 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		RUBY_VERSION=2.3
+
+
+Name:		sha256:bd971b467b08b8dbbbfee26bad80dcaa0110b184e0a8dd6c1b0460a6d6f5d332
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/nodejs-010-centos7@sha256:bd971b467b08b8dbbbfee26bad80dcaa0110b184e0a8dd6c1b0460a6d6f5d332
+Parent Image:	51c34328d22d2456e6d532f86e0c5e8d8606a0d75d0975fbadf3d41fb361925f
+Layer Size:	161.1 MB
+Image Created:	11 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/node_modules/.bin/:/opt/app-root/src/.npm-global/bin/:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		NPM_RUN=start
+		NODEJS_VERSION=0.10
+		NPM_CONFIG_PREFIX=/opt/app-root/src/.npm-global
+
+
+Name:		sha256:db44e046678b9b39c4c524a62d3b6289b7eca6e1a841f05dc545a17a50965ed0
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/mysql-56-centos7@sha256:db44e046678b9b39c4c524a62d3b6289b7eca6e1a841f05dc545a17a50965ed0
+Parent Image:	c0011a0c51712b0b07b295508f0b82fbc16821aa8c2bafce5c083b65e86d477e
+Layer Size:	132.5 MB
+Image Created:	4 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-mysqld
+Working Dir:	<none>
+User:		27
+Exposes Ports:	3306/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		MYSQL_VERSION=5.6
+		HOME=/var/lib/mysql
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/mysql
+		MYSQL_PREFIX=/opt/rh/rh-mysql56/root/usr
+		ENABLED_COLLECTIONS=rh-mysql56
+		BASH_ENV=/usr/share/container-scripts/mysql/scl_enable
+		ENV=/usr/share/container-scripts/mysql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/mysql/scl_enable
+Volumes:	/var/lib/mysql/data
+
+
+Name:		sha256:dbd4b6fef477e49bff9703ee70d20a2c48f68023562ebecc264d0b87a7fa270e
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/postgresql-92-centos7@sha256:dbd4b6fef477e49bff9703ee70d20a2c48f68023562ebecc264d0b87a7fa270e
+Parent Image:	1b0bc5a418da1d0c6a90ab1610dea99a6f84d366c6f345c6cf8a60533786c71f
+Layer Size:	97.23 MB
+Image Created:	7 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-postgresql
+Working Dir:	<none>
+User:		26
+Exposes Ports:	5432/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		POSTGRESQL_VERSION=9.2
+		HOME=/var/lib/pgsql
+		PGUSER=postgres
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/postgresql
+		ENABLED_COLLECTIONS=postgresql92
+		BASH_ENV=/usr/share/container-scripts/postgresql/scl_enable
+		ENV=/usr/share/container-scripts/postgresql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/postgresql/scl_enable
+Volumes:	/var/lib/pgsql/data
+
+
+Name:		sha256:e2d681b6e3b7e8eedf2fbb288c3e6587db6fd2b7a4aa55dd3a8ab032094dfa8c
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	openshift/perl-516-centos7@sha256:e2d681b6e3b7e8eedf2fbb288c3e6587db6fd2b7a4aa55dd3a8ab032094dfa8c
+Parent Image:	e6cd05c6c6ab01676fbb4d5a75a190b134d674143bd88760c641dd3fa5ff04bf
+Layer Size:	194 MB
+Image Created:	5 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/rh/perl516/root/usr/local/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PERL_VERSION=5.16
+
+
+Name:		sha256:e6fd9104a7febd6dcff31bf427f46ddb434e6041b69faff51c1313b526645389
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/postgresql-94-centos7@sha256:e6fd9104a7febd6dcff31bf427f46ddb434e6041b69faff51c1313b526645389
+Parent Image:	81f109c035e8f129a01446b9c46af202944db81de452903e5305abd498d2d482
+Layer Size:	110.3 MB
+Image Created:	4 weeks ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	run-postgresql
+Working Dir:	<none>
+User:		26
+Exposes Ports:	5432/tcp
+Environment:	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		POSTGRESQL_VERSION=9.4
+		HOME=/var/lib/pgsql
+		PGUSER=postgres
+		CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/postgresql
+		ENABLED_COLLECTIONS=rh-postgresql94
+		BASH_ENV=/usr/share/container-scripts/postgresql/scl_enable
+		ENV=/usr/share/container-scripts/postgresql/scl_enable
+		PROMPT_COMMAND=. /usr/share/container-scripts/postgresql/scl_enable
+Volumes:	/var/lib/pgsql/data
+
+
+Name:		sha256:eeaf951d0ff083eea29d757d987c7721c883fc3cee6f3a2f6076abd17c2a4cf2
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/php-56-centos7@sha256:eeaf951d0ff083eea29d757d987c7721c883fc3cee6f3a2f6076abd17c2a4cf2
+Parent Image:	b39fab2a087c0770114940e80385a8041552db10c18ae57c6cfaa5c41c115fac
+Layer Size:	193.3 MB
+Image Created:	13 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/rh/rh-php56/root/usr/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		PHP_VERSION=5.6
+
+
+Name:		sha256:f437d0de54a294d19f84d738e74dc1aef70403fbe479316018fb43edcdafbf92
+Created:	4 hours ago
+Labels:		<none>
+Docker Image:	centos/nodejs-4-centos7@sha256:f437d0de54a294d19f84d738e74dc1aef70403fbe479316018fb43edcdafbf92
+Parent Image:	088b3f05c545ca22be98e214cc7580f1b41a0967be005e672d04efc6b84d954c
+Layer Size:	159 MB
+Image Created:	13 days ago
+Author:		SoftwareCollections.org <sclorg@redhat.com>
+Arch:		amd64
+Entrypoint:	container-entrypoint
+Command:	/bin/sh -c $STI_SCRIPTS_PATH/usage
+Working Dir:	/opt/app-root/src
+User:		1001
+Exposes Ports:	8080/tcp
+Environment:	PATH=/opt/app-root/src/node_modules/.bin/:/opt/app-root/src/.npm-global/bin/:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+		STI_SCRIPTS_URL=image:///usr/libexec/s2i
+		STI_SCRIPTS_PATH=/usr/libexec/s2i
+		HOME=/opt/app-root/src
+		BASH_ENV=/opt/app-root/etc/scl_enable
+		ENV=/opt/app-root/etc/scl_enable
+		PROMPT_COMMAND=. /opt/app-root/etc/scl_enable
+		NODEJS_VERSION=4
+		NPM_RUN=start
+		NPM_CONFIG_PREFIX=/opt/app-root/src/.npm-global
+
+

@@ -1,0 +1,30 @@
+{
+  "kind": "ImageStream",
+  "apiVersion": "v1",
+  "metadata": {
+  "name": "angular2-ts",
+  "annotations": {
+    "openshift.io/display-name": "Angular2 TS"
+    }
+  },
+  "spec": {
+    "dockerImageRepository": "docker.io/marcdespland/s2i-angular2-ts",
+    "tags": [
+       {
+        "name": "latest",
+        "from": {
+          "kind": "DockerImage",
+          "name": "docker.io/marcdespland/s2i-angular2-ts"
+        },
+        "annotations": {
+          "openshift.io/display-name": "Angular2 TS builder with lighttpd server ",
+          "description": "Build Angular-cli project and expose it with lighttpd",
+          "iconClass": "icon-git",
+          "tags": "builder,angular2,lighttpd",
+          "supports":"angular2",
+          "version": "1.4.35"
+        }
+      }
+    ]
+  }
+}

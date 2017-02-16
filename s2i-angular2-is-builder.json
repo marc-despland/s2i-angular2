@@ -1,0 +1,31 @@
+{
+  "kind": "ImageStream",
+  "apiVersion": "v1",
+  "metadata": {
+  "name": "angular2",
+  "annotations": {
+    "openshift.io/display-name": "Angular2"
+    }
+  },
+  "spec": {
+    "dockerImageRepository": "172.30.159.90:5000/myproject/angular2",
+    "tags": [
+       {
+        "name": "latest",
+        "from": {
+          "kind": "DockerImage",
+          "name": "172.30.159.90:5000/myproject/angular2"
+        },
+        "annotations": {
+          "openshift.io/display-name": "Angular2 : angular-cli ",
+          "description": "Build and run Angular2 applications on CentOS 7 lighthttpd server",
+          "iconClass": "icon-nodejs",
+          "tags": "builder,angular2",
+          "supports":"angular2:1.0.0,angular2",
+          "version": "1.0.0",
+          "sampleRepo": "https://github.com/marc-despland/odyc3-ui.git"
+        }
+      }
+    ]
+  }
+}
