@@ -22,12 +22,17 @@ fi
 
 # Change to /tmp/src folder to build the application
 WORKDIR=$PWD;
+echo $PWD
 cd /tmp/src
+if [ -e lighttpd ]; then
+	echo "Copy lighttpd configuration"
+	cp lighttpd/* /opt/app-root/etc/
+fi
 echo "---> NPM Installation task..."
 npm install
 
 echo "---> Building application from source..."
-ng build
+ng build --env=prod
 
 # Go back to run folder
 cd $WORKDIR

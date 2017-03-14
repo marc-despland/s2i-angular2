@@ -23,3 +23,9 @@ This is an [S2I](https://github.com/openshift/source-to-image) image use to buil
 ```docker run -it --rm <application image>```
 
 The lighttpd server will listen on port 8080
+
+## Custumize lighttpd configuration
+
+If you create a lighttpd folder at the root of your project, its containt will be copy in /opt/app-root/etc folder (the configuration folder of lighttpd).
+
+By default the lighttpd.conf include the file application.conf (empty by default). so it's the good place to extend the default configuration.
